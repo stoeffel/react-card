@@ -170,7 +170,6 @@ var Card = React.createClass({
     return div({
       className: props.className,
       style: baseStyle,
-      onLevelChange: this.onLevelChange,
       onClick: this.onClick,
       onMouseOver: this.onOver,
       onMouseOut: this.onOut,
