@@ -28,7 +28,9 @@
     "design",
     "card"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "deepcopy": "^0.6.3"
+  },
   "devDependencies": {
     "browserify": "^10.2.4",
     "jsdom": "^5.4.3",

@@ -1,6 +1,7 @@
 'use strict';
 var React = require('react');
 var div = React.DOM.div;
+var deepcopy = require('deepcopy');
 
 var levels = [{
   boxShadow: "none"
@@ -158,7 +159,7 @@ var Card = React.createClass({
   render: function() {
     var props = this.props;
     var state = this.state;
-		var baseStyle = props.style;
+		var baseStyle = deepcopy(props.style);
 
 		if (props.width) baseStyle.width = props.width;
 		if (props.height) baseStyle.height = props.height;
